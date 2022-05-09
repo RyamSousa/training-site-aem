@@ -41,8 +41,6 @@
         <module>ui.config</module>
         <module>ui.content</module>
         <module>ui.content.sample</module>
-        <module>it.tests</module>
-        <module>dispatcher</module>
         <module>ui.tests</module>
     </modules>
 
