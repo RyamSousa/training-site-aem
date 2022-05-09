@@ -80,9 +80,10 @@
                         sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
                         fieldLabel="Imagem"
                         fileNameParameter="./fileName"
-                        fileReferenceParameter="./fileReference"
-                        mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
-                        name="./image"/>                    
+                        fileReferenceParameter="./imageBanner"
+                        mimeTypes="[image/gif,image/jpeg,image/png,image/webp,image/tiff,image/svg+xml]"
+                        name="./file"     
+                        multiple="{Boolean}false"/>               
                 </items>
             </column>
         </items>
