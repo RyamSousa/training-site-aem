@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <title
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"                        
+                        fieldLabel="Título"
+                        required="{Boolean}true"
+                        name="./title"/>
+                    <title_size
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"                        
+                        fieldLabel="Tamanho do Título"
+                        emptyText="Select"
+                        name="./titleSize">
+                        <items jcr:primaryType="nt:unstructured">
+                            <h1
+                                jcr:primaryType="nt:unstructured"
+                                text="H1"
+                                value="H1"
+                                selected="{Boolean}true"/>
+                            <h2
+                                jcr:primaryType="nt:unstructured"
+                                text="H2"
+                                value="H2"/>
+                            <h3
+                                jcr:primaryType="nt:unstructured"
+                                text="H3"
+                                value="H3"/>
+                        </items>
+                    </title_size>
+                    <description
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                        fieldLabel="Descrição"
+                        name="./description"                        
+                        useFixedInlineToolbar="{Boolean}true"
+                        removeSingleParagraphContainer="{Boolean}true"
+                        singleParagraphContainerReplacement="div">
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <experience-aem
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <format
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <subsuperscript
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                        <uiSettings jcr:primaryType="nt:unstructured">
+                            <cui jcr:primaryType="nt:unstructured">
+                                <inline
+                                    jcr:primaryType="nt:unstructured"
+                                    toolbar="[format#bold,format#italic,format#underline,subsuperscript#subscript,subsuperscript#superscript,links#modifylink,links#unlink,links#anchor,experience-aem#colorPicker]">
+                                    <popovers jcr:primaryType="nt:unstructured"></popovers>
+                                </inline>
+                                <dialogFullScreen
+                                    jcr:primaryType="nt:unstructured"
+                                    toolbar="[format#bold,format#italic,format#underline,subsuperscript#subscript,subsuperscript#superscript,links#modifylink,links#unlink,links#anchor,experience-aem#colorPicker]">
+                                </dialogFullScreen>
+                            </cui>
+                        </uiSettings>
+                    </description>
+                    <image                        
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                        fieldLabel="Imagem"
+                        fileNameParameter="./fileName"
+                        fileReferenceParameter="./fileReference"
+                        mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+                        name="./image"/>                    
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>
