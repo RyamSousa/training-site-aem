@@ -27,16 +27,16 @@
                             <h1
                                 jcr:primaryType="nt:unstructured"
                                 text="H1"
-                                value="H1"
+                                value="h1"
                                 selected="{Boolean}true"/>
                             <h2
                                 jcr:primaryType="nt:unstructured"
                                 text="H2"
-                                value="H2"/>
+                                value="h2"/>
                             <h3
                                 jcr:primaryType="nt:unstructured"
                                 text="H3"
-                                value="H3"/>
+                                value="h3"/>
                         </items>
                     </title_size>
                     <description
@@ -45,8 +45,7 @@
                         fieldLabel="Descrição"
                         name="./description"                        
                         useFixedInlineToolbar="{Boolean}true"
-                        removeSingleParagraphContainer="{Boolean}true"
-                        singleParagraphContainerReplacement="div">
+                        removeSingleParagraphContainer="{Boolean}true">
                         <rtePlugins jcr:primaryType="nt:unstructured">
                             <experience-aem
                                 jcr:primaryType="nt:unstructured"
@@ -78,12 +77,17 @@
                     <image                        
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
-                        fieldLabel="Imagem"
+                        autoStart="{Boolean}true"
+                        class="cq-droptarget"
                         fileNameParameter="./fileName"
                         fileReferenceParameter="./imageBanner"
                         mimeTypes="[image/gif,image/jpeg,image/png,image/webp,image/tiff,image/svg+xml]"
-                        name="./file"     
-                        multiple="{Boolean}false"/>               
+                        multiple="{Boolean}false"
+                        name="./file"
+                        title="image.banner"
+                        uploadUrl="${suffix.path}"
+                        allowUpload="{Boolean}false"
+                        useHTML5="{Boolean}true"/>               
                 </items>
             </column>
         </items>
