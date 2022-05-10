@@ -5,13 +5,7 @@ import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
-import javax.inject.Named;
-
-@Model(
-    adaptables = Resource.class,
-    resourceType = Banner.RESOURCE_TYPE,
-    defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
-)
+@Model(adaptables = Resource.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class Banner {
 
     static final String RESOURCE_TYPE = "wknd/components/banner";
@@ -40,7 +34,11 @@ public class Banner {
         return description;
     }
 
-    public String getImage() {
+    public String getImageBanner() {
         return imageBanner;
+    }
+
+    public String getExportedType() {
+        return RESOURCE_TYPE;
     }
 }
