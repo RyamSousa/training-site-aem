@@ -4,17 +4,17 @@
 
 <div
 	class="banner-container"
-	data-sly-use.banner="com.adobe.aem.guides.wknd.core.models.trainingfiec.Banner"
+	data-sly-use.banner="com.adobe.aem.guides.wknd.core.models.trainingfiec.model.Banner"
 >
 	<div class="banner-content">
+		<div class="banner-image-container">
+			<img src="${banner.imageBanner}" alt="Banner" />
+		</div>
 		<div class="banner-text-container">
 			<h1 class="banner-title" data-sly-element="${banner.titleSize}">${banner.title}</h1>
 			<p class="banner-description">
 				${banner.description}
 			</p>
-		</div>
-		<div class="banner-image-container">
-			<img src="${banner.imageBanner}" alt="Banner" />
 		</div>
 	</div>
 </div>
