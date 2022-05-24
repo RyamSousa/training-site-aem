@@ -40,8 +40,6 @@
         <module>ui.apps.structure</module>
         <module>ui.config</module>
         <module>ui.content</module>
-        <module>ui.content.sample</module>
-        <module>ui.tests</module>
     </modules>
 
     <properties>

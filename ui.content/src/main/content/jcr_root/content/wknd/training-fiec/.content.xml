@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-05-12T22:40:16.091-03:00"
+        cq:lastModified="{Date}2022-05-24T16:10:58.768-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/wknd/settings/wcm/templates/content-page-template"
         jcr:primaryType="cq:PageContent"
@@ -31,30 +31,30 @@
                     textIsRich="true"
                     title="Treinamento FIEC 2022"
                     titleSize="h1"/>
-                <cards
-                    jcr:created="{Date}2022-05-12T22:39:00.706-03:00"
+                <cards_container
+                    jcr:created="{Date}2022-05-24T16:09:22.721-03:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-05-12T22:40:16.089-03:00"
+                    jcr:lastModified="{Date}2022-05-24T16:10:58.765-03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="wknd/components/cards"
-                    title="TREINAMENTO FIEC"
+                    sling:resourceType="wknd/components/cards-container"
+                    title="Melhores momentos"
                     titleSize="h1">
                     <items jcr:primaryType="nt:unstructured">
                         <item0
                             jcr:primaryType="nt:unstructured"
-                            description="Descrição do card 1 aqui"
+                            description="Algumas bebidas"
                             image="/content/dam/wknd/en/adventures/beervana-portland/AdobeStock_239751461.jpeg"/>
                         <item1
                             jcr:primaryType="nt:unstructured"
-                            description="Descrição do card 2 aqui"
+                            description="Carinha dando rolê de meiota"
                             image="/content/dam/wknd/en/adventures/downhill-skiing-wyoming/AdobeStock_166718157.jpeg"/>
                         <item2
                             jcr:primaryType="nt:unstructured"
-                            description="Descrição do card 3 aqui"
-                            image="/content/dam/wknd/en/adventures/beervana-portland/AdobeStock_200192344.jpeg"/>
+                            description="Tirando onda"
+                            image="/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/Selvaraj_Surfing.JPG"/>
                     </items>
-                </cards>
+                </cards_container>
             </container>
         </root>
     </jcr:content>
