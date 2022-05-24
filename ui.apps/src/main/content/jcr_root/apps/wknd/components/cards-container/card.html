@@ -1,0 +1,10 @@
+<sly data-sly-template.cardTemplate="${@ list}">
+	<div class="card-content" data-sly-repeat.card="${list.items}">
+		<img src="${card.image}" alt="" />
+		<div class="text-content">
+			<p>
+				${card.description}
+			</p>
+		</div>
+	</div>
+</sly>

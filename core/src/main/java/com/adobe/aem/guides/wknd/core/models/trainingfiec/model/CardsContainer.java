@@ -10,7 +10,7 @@ import javax.inject.Inject;
 import java.util.List;
 
 @Model(adaptables = Resource.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
-public class CardList {
+public class CardsContainer {
 
     static final String RESOURCE_TYPE = "wknd/components/cards";
 

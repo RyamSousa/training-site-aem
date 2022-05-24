@@ -15,7 +15,6 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"                        
                         fieldLabel="Título"
-                        required="{Boolean}true"
                         name="./title"/>
                     <title_size
                         jcr:primaryType="nt:unstructured"
