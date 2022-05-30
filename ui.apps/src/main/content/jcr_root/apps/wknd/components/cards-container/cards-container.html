@@ -1,3 +1,87 @@
+<!-- Stage 1
+<div>
+	Treinamento
+</div> -->
+
+<!-- Stage 2
+<div data-sly-use.cardList="com.adobe.aem.guides.wknd.core.models.CardList">
+	${cardList.title}
+</div> -->
+
+<!-- Stage 3
+
+<div
+	data-sly-use.cardList="com.adobe.aem.guides.wknd.core.models.CardList"
+>
+	<h1 data-sly-element="${cardList.titleSize}">
+		${cards.title}
+	</h1>
+	<div>
+		<div data-sly-repeat.card="${cards.list}">
+			<img src="${card.image}" alt="" />
+			<div class="text-content">
+				<p>
+					${card.description}
+				</p>
+			</div>
+		</div>
+	</div>
+</div> -->
+
+<!-- Stage 4
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+	<sly data-sly-call="${clientlib.css @ categories='wknd.training-fiec'}" />
+</sly>
+
+<div
+	class="cards-container"
+	data-sly-use.cardList="com.adobe.aem.guides.wknd.core.models.CardList"
+>
+	<h1 class="cards-title" data-sly-element="${cardList.titleSize}">
+		${cards.title}
+	</h1>
+	<div class="cards-container-list">
+		<div class="card-content" data-sly-repeat.card="${cards.list}">
+			<img src="${card.image}" alt="" />
+			<div class="text-content">
+				<p>
+					${card.description}
+				</p>
+			</div>
+		</div>
+	</div>
+</div> -->
+
+<!-- Stage 5
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+	<sly data-sly-call="${clientlib.css @ categories='wknd.training-fiec'}" />
+</sly>
+
+<div
+	class="cards-container"
+	data-sly-use.cardList="com.adobe.aem.guides.wknd.core.models.CardList"
+	data-sly-test="${cardList.title}"
+>
+	<h1 class="cards-title" data-sly-element="${cardList.titleSize}">
+		${cards.title}
+	</h1>
+	<div class="cards-container-list">
+		<div class="card-content" data-sly-repeat.card="${cards.list}">
+			<img src="${card.image}" alt="" />
+			<div class="text-content">
+				<p>
+					${card.description}
+				</p>
+			</div>
+		</div>
+	</div>
+</div> 
+<div data-sly-test="${!cards.title}">Título não informado</div> -->
+
+<!-- Stage 6
+
 <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
 	<sly data-sly-call="${clientlib.css @ categories='wknd.training-fiec'}" />
 </sly>
@@ -11,9 +95,9 @@
 		${cards.title}
 	</h1>
 	<div class="cards-container-list">
-		<sly class="oi" data-sly-use.cardsList="card.html">
+		<sly data-sly-use.cardsList="card.html">
 			<sly data-sly-call="${cardsList.cardTemplate @ list=cards}"></sly>
 		</sly>
 	</div>
 </div>
-<div data-sly-test="${!cards.title}">Título não informado</div>
+<div data-sly-test="${!cards.title}">Título não informado</div> -->
