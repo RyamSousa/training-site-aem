@@ -1,10 +1,41 @@
+<!-- Stage 1
+<div
+	class="banner-container"
+	data-sly-use.banner="com.adobe.aem.guides.wknd.core.models.BannerModel"
+>
+	<img src="${banner.imageBanner}" alt="Banner" />
+	${banner.title}
+</div>
+
+-->
+
+<!-- Stage 2
+
 <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
 	<sly data-sly-call="${clientlib.css @ categories='wknd.training-fiec'}" />
 </sly>
 
 <div
 	class="banner-container"
-	data-sly-use.banner="com.adobe.aem.guides.wknd.core.models.trainingfiec.model.Banner"
+	data-sly-use.banner="com.adobe.aem.guides.wknd.core.models.BannerModel"
+>
+	<div class="banner-content">
+		<h1 class="banner-title">${banner.title}</h1>
+		<div class="banner-image-container">
+			<img src="${banner.imageBanner}" alt="Banner" />
+		</div>
+	</div>
+</div> -->
+
+<!-- Stage 3
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+	<sly data-sly-call="${clientlib.css @ categories='wknd.training-fiec'}" />
+</sly>
+
+<div
+	class="banner-container"
+	data-sly-use.banner="com.adobe.aem.guides.wknd.core.models.BannerModel"
 >
 	<div class="banner-content">
 		<div class="banner-image-container">
@@ -17,4 +48,4 @@
 			</p>
 		</div>
 	</div>
-</div>
+</div> -->
